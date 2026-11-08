@@ -1,0 +1,281 @@
+candidate:
+  timezone: Asia/Kolkata
+  experience_min_years: 0
+  experience_max_years: 2
+  resume_path: resume/Mohammed_Shahzad_Resume.pdf
+
+filters:
+  freshness_hours: 24
+  retention_days: 3
+  reject_unknown_freshness: false
+  min_match_score: 50
+  max_required_experience_years: 2
+  include_internships: true
+  keep_unknown_experience: true
+  keep_unknown_location_for_review: false
+
+target_roles:
+  role_families:
+    ai:
+      - ai engineer
+      - artificial intelligence engineer
+      - ai developer
+      - ai software engineer
+      - applied ai engineer
+      - ai solutions engineer
+    ml:
+      - machine learning engineer
+      - ml engineer
+      - applied machine learning engineer
+      - applied ml engineer
+      - machine learning developer
+    genai:
+      - generative ai engineer
+      - genai engineer
+      - gen ai engineer
+      - generative ai developer
+      - llm engineer
+      - rag engineer
+      - llm/rag engineer
+      - llm application engineer
+      - ai agent engineer
+      - agentic ai engineer
+    vision_nlp:
+      - computer vision engineer
+      - vision engineer
+      - nlp engineer
+      - natural language processing engineer
+    research_data:
+      - ai research engineer
+      - machine learning research engineer
+      - junior data scientist
+    internships:
+      - ai intern
+      - ai internship
+      - machine learning intern
+      - machine learning internship
+      - generative ai intern
+      - data science intern
+      - computer vision intern
+      - ai engineering intern
+  junior_markers:
+    - junior
+    - entry level
+    - entry-level
+    - graduate
+    - new grad
+    - fresher
+    - associate
+    - engineer i
+    - developer i
+    - intern
+    - internship
+  senior_markers:
+    - senior
+    - sr.
+    - "sr "
+    - lead
+    - staff
+    - principal
+    - manager
+    - architect
+    - head of
+    - director
+    - vice president
+    - vp
+
+locations:
+  countries:
+    - India
+    - Bengaluru
+    - Bangalore
+    - Hyderabad
+    - Pune
+    - Mumbai
+    - Noida
+    - Gurugram
+    - Gurgaon
+    - Delhi
+    - Chennai
+    - Kolkata
+    - United Arab Emirates
+    - UAE
+    - Dubai
+    - Abu Dhabi
+    - Sharjah
+    - Saudi Arabia
+    - Riyadh
+    - Jeddah
+    - Dammam
+    - Qatar
+    - Doha
+    - Kuwait
+    - Bahrain
+    - Oman
+    - Muscat
+    - Egypt
+    - Cairo
+    - Singapore
+    - United Kingdom
+    - UK
+    - London
+    - Germany
+    - Berlin
+    - Munich
+    - Canada
+    - Toronto
+  remote_enabled: true
+  accept_worldwide_remote: true
+  accept_india_remote: true
+  keep_unknown_remote_for_review: true
+
+matching:
+  weights:
+    skills: 0.40
+    title: 0.20
+    experience: 0.15
+    location: 0.10
+    education: 0.05
+    projects: 0.10
+
+sources:
+  linkedin:
+    enabled: true
+    queries:
+      - "AI Engineer"
+      - "Machine Learning Engineer"
+      - "Generative AI Engineer"
+      - "Junior AI Engineer"
+      - "AI Intern"
+      - "Machine Learning Intern"
+      - "LLM Engineer"
+      - "Computer Vision Engineer"
+    locations:
+      - "India"
+      - "Bengaluru"
+      - "Remote"
+      - "United Arab Emirates"
+    max_pages_per_combo: 1
+    delay_sec: 0.5
+  indeed:
+    enabled: true
+    queries:
+      - "AI Engineer"
+      - "Machine Learning Engineer"
+      - "Generative AI"
+      - "AI Intern"
+      - "Machine Learning Intern"
+    locations:
+      - "India"
+      - "Dubai"
+      - "United Arab Emirates"
+      - "Saudi Arabia"
+      - "Qatar"
+      - "Remote"
+    delay_sec: 0.8
+  bayt:
+    enabled: true
+  gulftalent:
+    enabled: true
+    queries:
+      - "ai engineer"
+      - "machine learning engineer"
+      - "generative ai"
+      - "ai intern"
+      - "machine learning intern"
+      - "data science"
+    delay_sec: 1.0
+  naukrigulf:
+    enabled: true
+    delay_sec: 1.5
+  himalayas:
+    enabled: true
+  jobicy:
+    enabled: true
+  weworkremotely:
+    enabled: true
+  remotive: {enabled: true}
+  arbeitnow: {enabled: true}
+  remoteok: {enabled: true}
+  greenhouse:
+    enabled: true
+    companies:
+      - careem
+      - tamara
+      - propertyfinder
+      - kitopi
+      - anthropic
+      - scaleai
+      - databricks
+      - togetherai
+      - pinecone
+      - glean
+      - groq
+      - synthesia
+      - writer
+      - appliedintuition
+      - abacusai
+      - cleanlab
+      - sakana
+      - fractal
+      - quantiphi
+      - tigeranalytics
+      - snorkel
+  lever:
+    enabled: true
+    companies:
+      - koreai
+      - uniphore
+  ashby:
+    enabled: true
+    companies:
+      - openai
+      - cohere
+      - perplexity
+      - fireworks
+      - elevenlabs
+      - cursor
+      - replit
+      - cartesia
+      - runway
+      - poolside
+      - character
+      - mistral
+      - pika
+      - postman
+      - sourcegraph
+  serpapi_google_jobs:
+    enabled: false
+    queries:
+      - "AI Engineer junior OR entry level OR graduate OR fresher"
+      - "Machine Learning Engineer junior OR entry level OR graduate OR fresher"
+      - "Generative AI Engineer OR LLM Engineer OR RAG Engineer junior"
+      - "Computer Vision Engineer junior OR entry level"
+    countries:
+      - India
+      - United Arab Emirates
+      - Saudi Arabia
+      - Qatar
+      - Singapore
+      - United Kingdom
+      - Germany
+      - Canada
+  adzuna:
+    enabled: false
+    countries: [in, gb, de, ca]
+    queries:
+      - ai engineer
+      - machine learning engineer
+      - generative ai engineer
+      - llm engineer
+      - computer vision engineer
+  jooble:
+    enabled: false
+    # Jooble uses regional API keys. Add keys in .env such as JOOBLE_KEY_UK, JOOBLE_KEY_DE.
+    regions: []
+
+email:
+  enabled: true
+  subject_prefix: Daily AI/ML Jobs
+  top_jobs_limit: 200
+  send_when_zero_jobs: true

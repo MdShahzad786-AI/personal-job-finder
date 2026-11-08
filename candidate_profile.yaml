@@ -1,0 +1,62 @@
+name: Mohammed Shahzad
+location: India
+experience_years: 0.42
+education:
+  degree: Bachelor of Computer Applications (BCA)
+  year: 2026
+skills:
+  - python
+  - sql
+  - machine learning
+  - deep learning
+  - nlp
+  - computer vision
+  - generative ai
+  - statistics
+  - pandas
+  - numpy
+  - scikit-learn
+  - tensorflow
+  - pytorch
+  - opencv
+  - langchain
+  - hugging face
+  - docker
+  - flask
+  - rest api
+  - streamlit
+  - git
+  - github
+  - aws
+  - gcp
+  - azure
+  - firebase
+  - chromadb
+  - rag
+  - embeddings
+  - yolo
+  - easyocr
+  - lightgbm
+projects:
+  - RAG document chatbot with LangChain, ChromaDB, Hugging Face, Gemini/OpenAI APIs, Docker and Streamlit
+  - Stock market prediction using LightGBM, Scikit-learn, Pandas, NumPy and Streamlit
+  - Vehicle number plate detection using YOLO, OpenCV and EasyOCR
+target_roles:
+  - Junior AI Engineer
+  - AI/ML Engineer
+  - Junior AI/ML Engineer
+  - Machine Learning Engineer
+  - Junior Machine Learning Engineer
+  - Generative AI Engineer
+  - Generative AI Developer
+  - LLM Engineer
+  - RAG Engineer
+  - Applied AI Engineer
+  - AI Developer
+  - Junior Computer Vision Engineer
+  - AI Intern
+  - Machine Learning Intern
+  - Generative AI Intern
+  - Data Science Intern
+  - Computer Vision Intern
+  - AI Engineering Intern

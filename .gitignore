@@ -1,0 +1,31 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment Variables & Secrets (NEVER COMMIT)
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.secret
+
+# Local Databases & Runtime Logs
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+*.log
+
+# OS & IDE Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

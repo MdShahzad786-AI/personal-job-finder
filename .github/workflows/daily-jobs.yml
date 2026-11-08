@@ -1,0 +1,38 @@
+name: Daily AI Job Hunt
+on:
+  schedule:
+    - cron: "45 3 * * *"  # 09:15 Asia/Kolkata
+  workflow_dispatch:
+
+jobs:
+  hunt:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Restore persistent job history
+        uses: actions/cache@v4
+        with:
+          path: data/jobs.db
+          key: ai-job-db-${{ github.run_id }}
+          restore-keys: |
+            ai-job-db-
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run tests
+        run: pytest -q
+      - name: Collect jobs and send digest
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+          DATABASE_PATH: data/jobs.db
+        run: python main.py --send-email
