@@ -1,6 +1,6 @@
 # 🎯 AI Job Hunter Pro & Intelligent Resume Matcher
 
-An autonomous, production-grade job discovery and resume-matching system designed for entry-level AI/ML candidates. It aggregates postings across 15+ job boards and company ATS portals, applies strict 24-hour freshness and experience filters, extracts credentials from resumes via an AI Agent, and calculates deterministic 0–100% match scores in real time.
+An autonomous, production-grade job discovery and resume-matching system designed for entry-level AI/ML candidates. It aggregates postings across 5+ job boards and company ATS portals, applies strict 24-hour freshness and experience filters, extracts credentials from resumes via an AI Agent, and calculates deterministic 0–100% match scores in real time.
 
 ![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12%20%7C%203.13-blue?logo=python)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.40+-FF4B4B?logo=streamlit)
